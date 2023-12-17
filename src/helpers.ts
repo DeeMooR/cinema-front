@@ -4,6 +4,15 @@ import { IMovie } from "./interfaces";
 const russianMonths = ['января','февраля','марта','апреля','мая','июня','июля','августа','сентября','октября','ноября','декабря'];
 const arrDaysOfWeek = ['воскресенье', 'понедельник', 'вторник', 'среда', 'четверг', 'пятница', 'суббота'];
 
+export const setTodayDate = () => {
+    const date25 = new Date('2023-10-25');
+    const currentTime = new Date();
+    date25.setHours(currentTime.getHours());
+    date25.setMinutes(currentTime.getMinutes());
+    return date25;
+}
+const today = setTodayDate();
+
 export const getTimePlusDuration = (date: string, duration: number) => {
     const [hours, minutes] = date.split(':').map(Number); 
     const newMinutes = minutes + duration;
@@ -24,12 +33,12 @@ const getDatePoints = (date: Date) => {
 }
 
 export const getTodayDate = () => {
-    const today = new Date();
-    return getDatePoints(today);
+    const currentDay = today;
+    return getDatePoints(currentDay);
 };
 
 export const getDateIn180 = () => {
-    const future = new Date();
+    const future = today;
     future.setDate(future.getDate() + 180);
     return getDatePoints(future);
 };
@@ -46,7 +55,7 @@ export const compareDayNowEnd = (end: string) => {
 }
     
 export const compareTimeNowStart = (strat: string) => {
-    const currentTime = new Date();
+    const currentTime = today;
     const [stratHours, stratMinutes] = strat.split(':').map(Number);
     const currentHours = currentTime.getHours();
     const currentMinutes = currentTime.getMinutes();
@@ -57,7 +66,7 @@ export const compareTimeNowStart = (strat: string) => {
 }
 
 export const getTodayDayMonthYear = () => {
-    let currentDate = new Date();
+    let currentDate = today;
     const day = currentDate.getDate().toString().padStart(2, '0');
     const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
     const year = currentDate.getFullYear();
@@ -66,7 +75,7 @@ export const getTodayDayMonthYear = () => {
 
 export const getArrDate = () => {
     const datesArray: string[] = [];
-    let currentDate = new Date();
+    let currentDate = today;
     for (let i = 0; i < 7; i++) {
         let dayOfWeek = arrDaysOfWeek[+currentDate.getDay()];
         if (i === 0 ) dayOfWeek = 'сегодня';
@@ -160,11 +169,11 @@ export const getArrDates7Days = () => {
         const year = date.getFullYear();
         return `${day < 10 ? '0' : ''}${day}.${month < 10 ? '0' : ''}${month}.${year}`;
     }
-      const today = new Date();
-      const arr = [formatDate(today)];
+      const currentDay = today;
+      const arr = [formatDate(currentDay)];
     for (let i = 1; i <= 6; i++) {
-        const nextDate = new Date(today);
-        nextDate.setDate(today.getDate() + i);
+        const nextDate = new Date(currentDay);
+        nextDate.setDate(currentDay.getDate() + i);
         arr.push(formatDate(nextDate));
     }
     return arr;
@@ -190,11 +199,11 @@ export const getArrSoonDatesWithWeek = () => {
         const year = date.getFullYear();
         return `${day}.${month}.${year}`;
     }
-    const today = new Date();
+    const currentDay = today;
     const dateArray = [];
     for (let i = 0; i < 6; i++) {
-        const futureDate = new Date(today);
-        futureDate.setDate(today.getDate() + 7 + i);
+        const futureDate = new Date(currentDay);
+        futureDate.setDate(currentDay.getDate() + 7 + i);
         const dayOfWeek = arrDaysOfWeek[futureDate.getDay()];
         const formattedDate = formatDate(futureDate);
         dateArray.push(`${dayOfWeek}, ${formattedDate}`);

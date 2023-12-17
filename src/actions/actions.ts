@@ -172,7 +172,7 @@ export const GET_GIFT_CARDS = (setModal: (v: JSX.Element) => void) => {
         
         try {
             let response = await fetch(
-                "https://jsonblob.com/api/jsonBlob/1165575060923998208"     // gift_cards
+                "https://jsonblob.com/api/jsonBlob/1186011692265234432"     // gift_cards
             )
             if (response.ok) {
                 const arrGiftCards = await response.json();
@@ -201,7 +201,7 @@ export const ADD_GIFT_SELECT = (arrWithNewAmount: IDataGiftCard[], objForGiftSel
         try {
             await dispatch({ type: "SET_GIFT_CARDS", payload: arrWithNewAmount });
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1165575060923998208',        // gift_cards
+                'https://jsonblob.com/api/jsonBlob/1186011692265234432',        // gift_cards
                 {
                     method: "PUT",
                     body: JSON.stringify(arrWithNewAmount),
