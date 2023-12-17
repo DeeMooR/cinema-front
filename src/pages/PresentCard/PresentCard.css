@@ -1,0 +1,108 @@
+.presentCard {
+  margin: -115px auto 0;
+}
+.presentCard .presentCard__main {
+  width: 100%;
+  height: 670px;
+}
+.presentCard .presentCard__wrapper {
+  max-width: 1200px;
+  padding: 30px 30px 0;
+  margin: 0 auto;
+}
+.presentCard .presentCard__wrapper .presentCard__this {
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+.presentCard .presentCard__wrapper .presentCard__table {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  gap: 22px;
+}
+.presentCard .presentCard__wrapper .presentCard__table.loading:before {
+  content: "";
+  position: absolute;
+  inset: 0px;
+  z-index: 2;
+  border-radius: 24px;
+  background-color: #27272A;
+  opacity: 0.5;
+}
+.presentCard .presentCard__wrapper .presentCard__table .loader {
+  position: absolute;
+  inset: 0px;
+}
+.presentCard .presentCard__wrapper .presentCard__table .presentCard__cards {
+  width: 100%;
+}
+.presentCard .presentCard__wrapper .presentCard__table .presentCard__cards .cards__item {
+  width: 100%;
+  height: auto;
+  margin: 0 0 18px 0;
+}
+.presentCard .presentCard__wrapper .presentCard__table .presentCard__cards .cards__item:last-child {
+  margin: 0;
+}
+.presentCard .presentCard__wrapper .presentCard__table .presentCard__basket {
+  max-width: 350px;
+  width: 100%;
+}
+.presentCard .presentCard__wrapper .presentCard__table .presentCard__basket.empty {
+  border: 1px dashed rgb(71, 71, 74);
+  border-radius: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.presentCard .presentCard__wrapper .presentCard__table .presentCard__basket .presentCard-basket__title {
+  font-size: 22px;
+  line-height: 30px;
+  font-weight: 700;
+  margin: 20px 0 32px;
+}
+.presentCard .presentCard__wrapper .presentCard__table .presentCard__basket button {
+  width: 100%;
+}
+.presentCard .presentCard__wrapper .presentCard__table .presentCard__basket .presentCard-basket__text {
+  line-height: 26px;
+  padding: 27px;
+}
+.presentCard .presentCard__wrapper .presentCard__table .presentCard__basket .presentCard-basket__text a {
+  color: rgb(28, 156, 223);
+  transition: all 0.2s ease 0s;
+}
+.presentCard .presentCard__wrapper .presentCard__table .presentCard__basket .presentCard-basket__text a:hover {
+  color: rgb(212, 7, 84);
+  transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 1023.98px) {
+  .presentCard .presentCard__wrapper .presentCard__table {
+    flex-direction: column;
+  }
+  .presentCard .presentCard__wrapper .presentCard__table .presentCard__basket {
+    padding: 0 20px;
+    max-width: 100%;
+    min-height: 60px;
+  }
+}
+@media (max-width: 599.98px) {
+  .presentCard .presentCard__main {
+    height: 570px;
+  }
+  .presentCard .presentCard__wrapper .presentCard__table .presentCard__basket {
+    padding: 0;
+  }
+}
+@media (max-width: 479.98px) {
+  .presentCard .presentCard__main {
+    height: 470px;
+  }
+  .presentCard .presentCard__wrapper .presentCard__this {
+    font-size: 16px;
+    line-height: 23px;
+  }
+}

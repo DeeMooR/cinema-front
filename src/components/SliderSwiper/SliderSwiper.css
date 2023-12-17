@@ -1,0 +1,85 @@
+.swiperPosters {
+    width: 100%;
+    height: 670px;
+    margin: 0 auto;
+}
+
+.swiperPosters .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiperPosters .swiper-slide img {
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.swiperPosters .swiper-button-prev {
+    padding: 70px 70px 70px calc((100vw - 1340px) / 2);
+    margin: 0 0 0 15px;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease 0s;
+    &:hover {
+        color: rgba(255, 255, 255);
+        margin: 0 0 0 0;
+    }
+}
+.swiperPosters .swiper-button-next {
+    padding: 70px calc((100vw - 1340px) / 2) 70px 70px;
+    margin: 0 15px 0 0;
+    color: rgba(255, 255, 255, 0.6);
+    transition: all 0.2s ease 0s;
+    &:hover {
+        color: rgba(255, 255, 255);
+        margin: 0;
+    }
+}
+.swiperPosters > .swiper-pagination-bullets .swiper-pagination-bullet {
+    margin: 0 5px 60px;
+}
+.swiperPosters .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: 0;
+    background: rgba(200, 199, 198);
+    transition: all 0.2s ease 0s;
+}
+.swiperPosters .swiper-pagination-bullet-active {
+    transform: scale(1.25);
+    background: rgba(200, 199, 198, 0.5);
+    border: 2px solid rgba(200, 199, 198);
+}
+
+@media (max-width: 1349.98px) {
+    .swiperPosters .swiper-button-prev {
+        padding: 70px 70px 70px 25px;
+    }
+    .swiperPosters .swiper-button-next {
+        padding: 70px 25px 70px 70px;
+    }
+}
+@media (max-width: 1023.98px) {
+    .swiperPosters .swiper-button-prev,
+    .swiperPosters .swiper-button-next {
+        display: none;
+    }
+}
+@media (max-width: 599.98px) {
+    .swiperPosters > .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 5px 50px;
+    }
+}
+@media (max-width: 479.98px) {
+    .swiperPosters {
+        height: 570px;
+    }
+    .swiperPosters > .swiper-pagination-bullets .swiper-pagination-bullet {
+        margin: 0 5px 40px;
+    }
+}

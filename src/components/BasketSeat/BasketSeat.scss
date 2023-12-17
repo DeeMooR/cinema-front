@@ -1,0 +1,67 @@
+.basketSeat {
+    display: flex;
+    align-items: flex-start;
+    padding: 22px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    .basketSeat__image {
+        min-width: calc(30px*1.8);
+        height: 35px;
+        margin: auto 15px;
+        opacity: 0.4;
+        img {
+            width: 35px;
+            height: 35px;
+            margin: auto;
+        }
+        &.sofa {
+            img {
+                width: calc(30px*1.8);
+                height: 30px;
+            }
+        }
+    }
+    .basketSeat__info {
+        flex-grow: 1;
+        .basketSeat__seat-cost {
+            display: flex;
+            justify-content: space-between;
+            margin: 0 0 3px 0;
+            .basketSeat__seat {
+                font-size: 17px;
+                line-height: 26px;
+            }
+            .basketSeat__cost {
+                font-size: 17px;
+                line-height: 26px;
+                font-weight: 600;
+                margin: 0 0 0 12px;
+            }
+        }
+        .basketSeat__type {
+            font-size: 14px;
+            line-height: 24px;
+            color: rgba(200, 199, 198, 0.8);
+            span {
+                text-transform: capitalize;
+            }
+        }
+    }
+    .basketSeat__cross {
+        padding: 0 15px 0 10px;
+        opacity: 0.6;
+        transition: all 0.2s ease 0s;
+        cursor: pointer;
+        &:hover {
+            opacity: 1;
+            transition: all 0.3s ease 0s;
+        }
+    }
+}
+
+@media (max-width: 1023.98px) {
+    .basketSeat {
+        .basketSeat__left {
+            display: block;
+        }
+    }
+}

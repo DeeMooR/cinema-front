@@ -1,0 +1,94 @@
+.slideBar {
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  top: 0;
+  bottom: 0;
+  left: -100%;
+  z-index: 6;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  transition: left 0.45s ease;
+}
+.slideBar.show {
+  left: 0;
+}
+.slideBar .slideBar__logo {
+  margin: 35px auto 0;
+}
+.slideBar .slideBar__logo div {
+  width: 200px;
+  height: 112.5px;
+}
+.slideBar .slideBar__item {
+  padding: 50px 0 0 0;
+  font-size: 25px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.2s ease 0s;
+}
+.slideBar .slideBar__item:hover {
+  color: rgb(255, 255, 255);
+  transition: all 0.3s ease 0s;
+}
+.slideBar .slideBar__icons {
+  display: flex;
+  justify-content: center;
+  margin: 50px 0 0 0;
+  gap: 60px;
+}
+.slideBar .slideBar__icons img {
+  width: 45px;
+  height: 45px;
+  opacity: 0.6;
+  transition: all 0.2s ease 0s;
+  cursor: pointer;
+}
+.slideBar .slideBar__icons img:hover {
+  opacity: 1;
+  transition: all 0.3s ease 0s;
+}
+.slideBar .slideBar__cross {
+  position: absolute;
+  display: block;
+  top: 50px;
+  right: 15px;
+  width: 35px;
+  height: 35px;
+  opacity: 0.6;
+  cursor: pointer;
+  transition: left 0.2s ease;
+}
+.slideBar .slideBar__cross.hover {
+  opacity: 1;
+}
+
+@media (max-width: 479.98px) {
+  .slideBar .slideBar__logo div {
+    width: 180px;
+    height: 101px;
+  }
+}
+@media (max-width: 399.98px) {
+  .slideBar .slideBar__logo div {
+    width: 160px;
+    height: 90px;
+  }
+  .slideBar .slideBar__item {
+    padding: 40px 0 0 0;
+    font-size: 22px;
+  }
+  .slideBar .slideBar__icons {
+    margin: 40px 0 0 0;
+    gap: 40px;
+  }
+  .slideBar .slideBar__icons img {
+    width: 35px;
+    height: 35px;
+  }
+  .slideBar .slideBar__cross {
+    width: 30px;
+    height: 30px;
+  }
+}

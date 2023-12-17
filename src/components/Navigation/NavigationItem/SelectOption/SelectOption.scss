@@ -1,0 +1,76 @@
+.selectOption {
+    margin: 15px 20px 0;
+    .selectOption__text {
+        color: #000;
+        .selectOption__item {
+            display: block;
+            padding: 10px 0;
+            color: #000;
+            transition: all 0.2s ease 0s;
+            &:hover {
+                color: rgb(28, 156, 223);
+                transition: all 0.2s ease 0s;
+            }
+            &:last-child {
+                padding: 10px 0 30px;
+            }
+            &.active {
+                color: rgb(212, 7, 84);
+            }
+        }
+        .selectOption__title {
+            padding: 10px 0;
+            font-weight: 700;
+        }
+        .selectOption__choise {
+            display: block;
+            position: relative;
+            padding: 10px 0 10px 25px;
+            &:last-child {
+                padding: 10px 0 30px 25px;
+            }
+            cursor: pointer;
+            input {
+                display: none;
+            }
+            .checkmark {
+                position: absolute;
+                top: 10px;
+                left: 0;
+                height: 1em;
+                width: 1em;
+                border: 1px solid rgba(39, 39, 42, 0.8);
+                border-radius: 0.25em;
+                background-repeat: no-repeat;
+                background-position: center center;
+                background-size: 50% 50%;
+                &.click {
+                    background-color: rgb(212, 7, 84);
+                    border: 1px solid rgb(212, 7, 84);
+                    &:before {
+                        content: '✔';
+                        color: #fff;
+                        position: absolute;  
+                        top: 50%;
+                        left: 50%;
+                        transform: translate(-50%, -50%);
+                    }
+                }
+            }
+            &:hover {
+                color: rgb(212, 7, 84);
+                transition: all 0.4s ease 0s;
+                .checkmark {
+                    border: 1px solid rgb(212, 7, 84);
+                    transition: all 0.4s ease 0s;
+                }
+            }
+        }
+        .selectOption__line {
+            margin: 10px 0 0 0;
+            width: 100%;
+            height: 1px;
+            background-color: rgba(39, 39, 42, 0.2);
+        }
+    }
+}

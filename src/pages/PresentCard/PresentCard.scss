@@ -1,0 +1,122 @@
+.presentCard {
+    margin: -115px auto 0;
+    .presentCard__main {
+        width: 100%;
+        height: 670px;
+    }
+    .presentCard__wrapper {
+        max-width: 1200px;
+        padding: 30px 30px 0;
+        margin: 0 auto;
+        .presentCard__this {
+            font-size: 18px;
+            line-height: 26px;
+            text-align: center;
+            margin: 0 0 30px 0;
+        }
+        .presentCard__table {
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            gap: 22px;
+            &.loading:before {
+                content: "";
+                position: absolute;
+                inset: 0px;
+                z-index: 2;
+                border-radius: 24px;
+                background-color: #27272A;
+                opacity: 0.5;
+            }
+            .loader {
+                position: absolute;
+                inset: 0px;
+            }
+            .presentCard__cards {
+                width: 100%;
+                .cards__item {
+                    width: 100%;
+                    height: auto;
+                    margin: 0 0 18px 0;
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+            .presentCard__basket {
+                max-width: 350px;
+                width: 100%;
+                &.empty {
+                    border: 1px dashed rgb(71, 71, 74);
+                    border-radius: 24px;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                .presentCard-basket__title {
+                    font-size: 22px;
+                    line-height: 30px;
+                    font-weight: 700;
+                    margin: 20px 0 32px;
+                }
+                button {
+                    width: 100%;
+                }
+                .presentCard-basket__text {
+                    line-height: 26px;
+                    padding: 27px;
+                    a {
+                        color: rgb(28, 156, 223);
+                        transition: all 0.2s ease 0s;
+                        &:hover {
+                            color: rgb(212, 7, 84);
+                            transition: all 0.3s ease 0s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1023.98px) {
+    .presentCard {
+        .presentCard__wrapper {
+            .presentCard__table {
+                flex-direction: column;
+                .presentCard__basket {
+                    padding: 0 20px;
+                    max-width: 100%;
+                    min-height: 60px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 599.98px) {
+    .presentCard {
+        .presentCard__main {
+            height: 570px;
+        }
+        .presentCard__wrapper {
+            .presentCard__table {
+                .presentCard__basket {
+                    padding: 0;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 479.98px) {
+    .presentCard {
+        .presentCard__main {
+            height: 470px;
+        }
+        .presentCard__wrapper {
+            .presentCard__this {
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+}

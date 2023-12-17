@@ -1,0 +1,38 @@
+.sign .sign__inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 0 40px 0;
+}
+.sign .sign__have-account {
+  margin: 32px 0 0 0;
+  text-align: center;
+  line-height: 20px;
+  color: rgba(255, 255, 255, 0.35);
+}
+.sign .sign__have-account a {
+  padding: 0 0 0 5px;
+  color: rgb(28, 156, 223);
+  transition: all 0.2s ease 0s;
+}
+.sign .sign__have-account a:hover {
+  color: rgb(212, 7, 84);
+  transition: all 0.3s ease 0s;
+}
+.sign.signUp .sign__inputs {
+  gap: 21px;
+  margin: 0 0 33px 0;
+}
+.sign.signUp .sign__have-account {
+  margin: 28px 0 0 0;
+}
+
+@media (max-width: 479.98px) {
+  .sign .sign__inputs {
+    gap: 20px;
+    margin: 0 0 32px 0;
+  }
+  .sign .sign__have-account {
+    margin: 24px 0 0 0;
+  }
+}

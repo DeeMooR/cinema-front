@@ -1,0 +1,31 @@
+.input {
+  width: 100%;
+}
+.input .input__title {
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0 0 8px 0;
+  color: #fff;
+}
+.input .input__input {
+  width: 100%;
+  padding: 16px 20px;
+  border-radius: 10px;
+  line-height: 20px;
+  background-color: #323537;
+  color: rgba(255, 255, 255, 0.8);
+}
+.input .input__input.defect {
+  background-color: rgba(188, 27, 40, 0.35);
+}
+.input .input__forgot {
+  display: block;
+  margin: 8px 0 0 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.35);
+  transition: all 0.2s ease 0s;
+}
+.input .input__forgot:hover {
+  color: rgb(28, 156, 223);
+  transition: all 0.3s ease 0s;
+}

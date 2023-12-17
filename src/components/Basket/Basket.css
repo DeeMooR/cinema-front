@@ -1,0 +1,32 @@
+.basket {
+  width: 100%;
+}
+.basket .basket__items {
+  max-height: 300px;
+  overflow-y: auto;
+}
+.basket .basket__items::-webkit-scrollbar {
+  width: 7px;
+}
+.basket .basket__items::-webkit-scrollbar-thumb {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+.basket .basket__items .basket__item {
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+.basket .basket__items .basket__item:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.basket .basket__total {
+  margin: 20px 0 15px;
+  line-height: 26px;
+  text-align: center;
+}
+.basket .basket__total .basket-total__text {
+  margin: 0 5px 0 0;
+}
+.basket .basket__total .basket-total__sum {
+  font-size: 24px;
+  font-weight: 700;
+}

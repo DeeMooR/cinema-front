@@ -1,0 +1,26 @@
+.basketCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 26px;
+    padding: 22px 0;
+    .basketCard__left {
+        display: flex;
+        flex-direction: column;
+    }
+    .basketCard__right {
+        font-weight: 700;
+        .basketCard__amount {
+            margin: 0 50px 0 0;
+        }
+    }
+}
+
+@media (max-width: 1023.98px) {
+    .basketCard {
+        .basketCard__left {
+            display: block;
+        }
+    }
+}

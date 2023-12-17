@@ -1,0 +1,48 @@
+.seatTypeInfo {
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    .seatTypeInfo__image {
+        min-width: calc(30px*1.8);
+        height: 35px;
+        margin: 15px 15px 15px 10px;
+        opacity: 0.4;
+        img {
+            width: 35px;
+            height: 35px;
+            margin: auto;
+        }
+        &.sofa {
+            img {
+                width: calc(30px*1.8);
+                height: 30px;
+            }
+        }
+    }
+    .seatTypeInfo__info {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        .seatTypeInfo__title-cost {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0 0 10px 0;
+            .seatTypeInfo__title {
+                text-transform: capitalize;
+                font-size: 18px;
+            }
+            .seatTypeInfo__cost {
+                font-size: 18px;
+                font-weight: 600;
+                margin: 0 0 0 12px;
+            }
+        }
+        .seatTypeInfo__description {
+            font-size: 14px;
+            line-height: 25px;
+            color: rgba(200, 199, 198, 0.8);
+        }
+    }
+}

@@ -1,0 +1,158 @@
+.accountBuyTicket {
+  max-width: 950px;
+  margin: 0 0 25px 0;
+  display: flex;
+  gap: 20px;
+}
+.accountBuyTicket .accountBuyTicket__image {
+  max-width: 100px;
+  border-radius: 12px;
+}
+.accountBuyTicket .accountBuyTicket__info {
+  width: 100%;
+}
+.accountBuyTicket .accountBuyTicket__info .accountBuyTicket__title {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+  margin: 20px 0 19px 0;
+}
+.accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text {
+  padding: 0 0 10px 0;
+  line-height: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__left .accountBuyTicket__date-time {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 11px 0;
+}
+.accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__left .accountBuyTicket__date-time.alreadyStart {
+  color: #922132;
+}
+.accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__left .accountBuyTicket__other span {
+  margin: 0 12px 0 0;
+}
+.accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__left .accountBuyTicket__other span:last-child {
+  margin: 0;
+}
+.accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__left .accountBuyTicket__other .accountBuyTicket__age {
+  font-size: 17px;
+  font-weight: 700;
+}
+.accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__middle .accountBuyTicket__seat {
+  font-size: 17px;
+  font-weight: 500;
+  margin: 0 0 11px 0;
+}
+.accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__middle .accountBuyTicket__type {
+  font-size: 17px;
+}
+.accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__middle .accountBuyTicket__type span {
+  text-transform: capitalize;
+}
+.accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__cost {
+  font-size: 32px;
+  line-height: 32px;
+  font-weight: 600;
+}
+
+@media (max-width: 767.98px) {
+  .accountBuyTicket {
+    max-width: 600px;
+  }
+  .accountBuyTicket .accountBuyTicket__image {
+    max-width: 180px;
+    border-radius: 18px;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text {
+    padding: 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__left .accountBuyTicket__other {
+    margin: 0 0 11px 0;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__left .accountBuyTicket__other .accountBuyTicket__age {
+    font-weight: 400;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__middle .accountBuyTicket__seat {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 11px 0;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__middle .accountBuyTicket__type {
+    margin: 0 0 11px 0;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__cost {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 479.98px) {
+  .accountBuyTicket {
+    margin: 0 0 40px 0;
+  }
+  .accountBuyTicket .accountBuyTicket__image {
+    max-width: 120px;
+    max-height: 180px;
+    border-radius: 14px;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__title {
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0 0 19px 0;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__left .accountBuyTicket__title {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__middle .accountBuyTicket__type {
+    margin: 0 0 18px 0;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__cost {
+    font-size: 32px;
+    line-height: 32px;
+    font-weight: 600;
+  }
+}
+@media (max-width: 399.98px) {
+  .accountBuyTicket {
+    gap: 15px;
+  }
+  .accountBuyTicket .accountBuyTicket__image {
+    max-width: 100px;
+    max-height: 150px;
+    border-radius: 10px;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__title {
+    font-size: 24px;
+    line-height: 28px;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__left {
+    font-size: 16px;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__middle {
+    font-size: 16px;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__text .accountBuyTicket__cost {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+@media (max-width: 349.98px) {
+  .accountBuyTicket {
+    margin: 0 0 50px 0;
+  }
+  .accountBuyTicket .accountBuyTicket__image {
+    display: none;
+  }
+  .accountBuyTicket .accountBuyTicket__info .accountBuyTicket__title {
+    font-size: 30px;
+    line-height: 36px;
+  }
+}

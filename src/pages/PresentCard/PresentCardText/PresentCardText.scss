@@ -1,0 +1,39 @@
+.presentCardText {
+    margin: 50px 0 0 0;
+    .presentCardText__title {
+        font-size: 32px;
+        margin: 0 0 22px 0;
+        font-weight: 600;
+    }
+    .presentCardText__subtitle {
+        font-size: 20px;
+        line-height: 26px;
+        font-weight: 500;
+        margin: 0 0 9px 0;
+    }
+    .presentCardText__text {
+        font-size: 16px;
+        line-height: 26px;
+        margin: 0 0 40px 0;
+    }
+    .presentCardText__list {
+        margin: 0 0 40px 0;
+        .presentCardText__item {
+            font-size: 16px;
+            line-height: 26px;
+            margin: 0 0 8px 0;
+            span {
+                color: rgb(212, 7, 84);
+                padding: 0 10px 0 25px;
+            }
+        }
+    }
+    a {
+        color: rgb(28, 156, 223);
+        transition: all 0.2s ease 0s;
+        &:hover {
+            color: rgb(212, 7, 84);
+            transition: all 0.3s ease 0s;
+        }
+    }
+}

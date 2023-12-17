@@ -1,0 +1,26 @@
+.rowSeats {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3px;
+}
+.rowSeats img {
+  width: 6%;
+  height: 40px;
+}
+.rowSeats img.empty {
+  opacity: 0.4;
+  cursor: pointer;
+}
+.rowSeats.sofa {
+  gap: 7px;
+}
+.rowSeats.sofa img {
+  width: 72px;
+}
+
+.rowSeats__number {
+  color: rgba(255, 255, 255, 0.35);
+  margin: 0 10px;
+}

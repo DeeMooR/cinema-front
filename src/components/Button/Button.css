@@ -1,0 +1,48 @@
+.custom-button {
+    display: block;
+    padding: 11px 22px;
+    margin: 20px auto 0;
+    font-size: 16px;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.8);
+    border-radius: 25px;
+    transition: all 0.2s ease 0s;
+}
+.border-red {
+    border: 2px solid rgb(212, 7, 84);
+}
+.border-red.fill {
+    background-color: rgb(212, 7, 84);
+}
+.border-white {
+    border: 2px solid #fff;
+}
+.border-grey {
+    border: 2px solid rgba(255, 255, 255, 0.35);
+    color: rgba(255, 255, 255, 0.35);
+}
+.height-min {
+    padding: 5px 18px;
+}
+.border-red:hover {
+    background-color: rgb(212, 7, 84);
+    color: #fff;
+    transition: all 0.3s ease 0s;
+}
+.border-white:hover {
+    background-color: #fff;
+    color: #000;
+    transition: all 0.3s ease 0s;
+}
+
+@media (max-width: 599.98px) {
+    .custom-button {
+        padding: 9px 18px;
+    }
+}
+@media (max-width: 399.98px) {
+    .become-small {
+        font-size: 15px;
+        padding: 7px 12px;
+    }
+}

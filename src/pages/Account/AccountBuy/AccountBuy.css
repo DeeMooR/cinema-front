@@ -1,0 +1,28 @@
+.accountBuy {
+  margin: 50px 0 0 0;
+}
+.accountBuy .accountBuy__title {
+  font-size: 23px;
+  font-weight: 500;
+}
+.accountBuy .accountBuy__address {
+  line-height: 24px;
+  margin: 15px 0 0 0;
+}
+.accountBuy .accountBuy__items {
+  width: 100%;
+  margin: 25px 0 70px;
+}
+.accountBuy .accountBuy__empty {
+  font-size: 19px;
+  line-height: 28px;
+  margin: 15px 0 50px 0;
+}
+.accountBuy .accountBuy__empty a {
+  color: rgb(28, 156, 223);
+  transition: all 0.2s ease 0s;
+}
+.accountBuy .accountBuy__empty a:hover {
+  color: rgb(212, 7, 84);
+  transition: all 0.3s ease 0s;
+}

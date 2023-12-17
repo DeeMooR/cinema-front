@@ -1,0 +1,73 @@
+.scheduleItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 5px;
+    padding: 0 10px;
+    height: 144px;
+    text-align: center;
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    border-radius: 22px;
+    cursor: pointer;
+    transition: all 0.2s ease 0s;
+    &:hover {
+        border: 2px solid rgba(255, 255, 255, 0.8);
+        transition: all 0.2s ease 0s;
+    }
+    .scheduleItem__time {
+        font-size: 30px;
+    }
+    .scheduleItem__audio {
+        margin: 10px 0 0 0;
+        line-height: 20px;
+        font-size: 14px;
+        font-weight: 700;   
+    }
+    .scheduleItem__room {
+        margin: 6px 0 0 0;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.35);
+    }
+    &.alreadyStart {
+        opacity: 0.5;
+        cursor: default;
+        &:hover {
+            border: 2px solid rgba(255, 255, 255, 0.15);
+        }
+    }
+}
+@media (max-width: 767.98px) {
+    .scheduleItem {
+        display: block;
+        .scheduleItem__time {
+            margin: 25px 0 0 0;
+            font-size: 26px;
+        }
+    }
+}
+@media (max-width: 479.98px) {
+    .scheduleItem {
+        .scheduleItem__time {
+            font-size: 30px;
+        }
+        .scheduleItem__audio {
+            font-size: 15px;
+        }
+        .scheduleItem__room {
+            font-size: 15px;
+        }
+    }
+}
+@media (max-width: 359.98px) {
+    .scheduleItem {
+        .scheduleItem__time {
+            font-size: 24px;
+        }
+        .scheduleItem__audio {
+            font-size: 14px;
+        }
+        .scheduleItem__room {
+            font-size: 14px;
+        }
+    }
+}

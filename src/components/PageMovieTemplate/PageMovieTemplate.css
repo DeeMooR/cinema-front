@@ -1,0 +1,69 @@
+.pageMovieTemplate {
+  position: absolute;
+  inset: 0px;
+  overscroll-behavior: contain;
+  display: flex;
+  flex-direction: column;
+}
+.pageMovieTemplate .pageMovieTemplate__header {
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+  transition: all 0.2s ease 0s;
+}
+.pageMovieTemplate .pageMovieTemplate__header.scrollHeader {
+  background-color: rgba(39, 39, 42, 0.8);
+  box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px;
+}
+.pageMovieTemplate .pageMovieTemplate__header .header__wrapper {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.pageMovieTemplate .pageMovieTemplate__header .header__wrapper img {
+  width: 25px;
+  cursor: pointer;
+  opacity: 0.6;
+  margin: 0 20px 0 0;
+  transition: left 0.2s ease;
+}
+.pageMovieTemplate .pageMovieTemplate__header .header__wrapper img:hover {
+  opacity: 1;
+}
+.pageMovieTemplate .pageMovieTemplate__header .header__wrapper span {
+  flex-grow: 1;
+  font-weight: 700;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.35);
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.pageMovieTemplate .pageMovieTemplate__scroll {
+  position: relative;
+  flex: 1 1 auto;
+  overflow: auto;
+}
+.pageMovieTemplate .pageMovieTemplate__scroll::-webkit-scrollbar {
+  width: 7px;
+}
+.pageMovieTemplate .pageMovieTemplate__scroll::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+}
+
+@media (max-width: 1023.98px) {
+  .pageMovieTemplate .pageMovieTemplate__header .header__wrapper {
+    height: 70px;
+  }
+}
+@media (max-width: 767.98px) {
+  .pageMovieTemplate .pageMovieTemplate__header .header__wrapper {
+    height: 60px;
+  }
+}

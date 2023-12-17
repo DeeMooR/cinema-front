@@ -1,0 +1,67 @@
+.main {
+  margin: -115px 0 0 0;
+}
+.main .main__afisha {
+  padding: 35px 0 10px;
+}
+.main .main__afisha .afisha-main__wrapper {
+  max-width: 1200px;
+  padding: 0 30px;
+  margin: 0 auto;
+}
+.main .main__afisha .afisha-main__wrapper .afisha-main__title {
+  margin: 0 0 35px 0;
+}
+.main .main__afisha .afisha-main__wrapper .afisha-main__buttons {
+  display: flex;
+  justify-content: space-between;
+}
+.main .main__afisha .afisha-main__wrapper .afisha-main__buttons .buttons__left {
+  display: flex;
+  gap: 30px;
+}
+.main .main__afisha .afisha-main__wrapper .afisha-main__buttons .buttons__left a {
+  padding: 0 0 27px;
+  color: rgba(144, 144, 143, 0.8);
+  transition: all 0.2s ease 0s;
+}
+.main .main__afisha .afisha-main__wrapper .afisha-main__buttons .buttons__left a:hover {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.3s ease 0s;
+}
+.main .main__afisha .afisha-main__wrapper .afisha-main__buttons .buttons__left a.active {
+  position: relative;
+  color: rgba(255, 255, 255, 0.8);
+}
+.main .main__afisha .afisha-main__wrapper .afisha-main__buttons .buttons__left a.active:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 100%;
+  bottom: -1px;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.main .main__afisha .afisha-main__wrapper .afisha-main__buttons .buttons__afisha {
+  color: rgba(255, 255, 255, 0.8);
+  transition: all 0.2s ease 0s;
+}
+.main .main__afisha .afisha-main__wrapper .afisha-main__buttons .buttons__afisha:hover {
+  color: rgb(212, 7, 84);
+  transition: all 0.3s ease 0s;
+}
+.main .main__afisha .afisha-main__wrapper .afisha-main__line {
+  height: 1px;
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.main .news__item {
+  width: 100%;
+}
+
+@media (max-width: 599.98px) {
+  .main .main__afisha .afisha-main__wrapper .afisha-main__buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+    gap: 35px;
+  }
+}

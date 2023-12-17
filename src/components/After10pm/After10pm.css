@@ -1,0 +1,25 @@
+.after10pm {
+  width: calc(60% - 20px);
+  padding: 16px;
+  background-color: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  margin: 0 0 30px 0;
+}
+.after10pm .after10pm__title {
+  margin: 0px 0px 16px;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 30px;
+}
+.after10pm .after10pm__text {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 26px;
+  color: rgb(140, 134, 134);
+}
+
+@media (max-width: 1023.98px) {
+  .after10pm {
+    width: 100%;
+  }
+}

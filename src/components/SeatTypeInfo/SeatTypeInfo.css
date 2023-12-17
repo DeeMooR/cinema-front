@@ -1,0 +1,46 @@
+.seatTypeInfo {
+  display: flex;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+.seatTypeInfo .seatTypeInfo__image {
+  min-width: 54px;
+  height: 35px;
+  margin: 15px 15px 15px 10px;
+  opacity: 0.4;
+}
+.seatTypeInfo .seatTypeInfo__image img {
+  width: 35px;
+  height: 35px;
+  margin: auto;
+}
+.seatTypeInfo .seatTypeInfo__image.sofa img {
+  width: 54px;
+  height: 30px;
+}
+.seatTypeInfo .seatTypeInfo__info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.seatTypeInfo .seatTypeInfo__info .seatTypeInfo__title-cost {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 10px 0;
+}
+.seatTypeInfo .seatTypeInfo__info .seatTypeInfo__title-cost .seatTypeInfo__title {
+  text-transform: capitalize;
+  font-size: 18px;
+}
+.seatTypeInfo .seatTypeInfo__info .seatTypeInfo__title-cost .seatTypeInfo__cost {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0 0 0 12px;
+}
+.seatTypeInfo .seatTypeInfo__info .seatTypeInfo__description {
+  font-size: 14px;
+  line-height: 25px;
+  color: rgba(200, 199, 198, 0.8);
+}

@@ -1,0 +1,8 @@
+.newsPage .newsPage__title {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 30px;
+}
+.newsPage .news__item {
+  width: 100%;
+}

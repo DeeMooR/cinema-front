@@ -1,0 +1,106 @@
+.swiperMovies {
+    width: 100%;
+    padding: 0 30px;
+    margin: 25px auto 0;
+}
+
+.swiperMovies .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-button-disabled {
+    display: none;
+}
+
+.swiperMovies .swiper-slide img {
+    display: block;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.slide__item {
+    width: 100%;
+    padding: 0 15px;
+}
+
+.swiperMovies .swiper-button-prev,
+.swiperMovies .swiper-button-next {
+    padding: 50px 32px;
+    margin: -180px 0 0 80px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 32px;
+    transition: all 0.2s ease 0s;
+    &:hover {
+        color: rgba(255, 255, 255);
+    }
+}
+.swiperMovies .swiper-button-next {
+    margin: -180px 80px 0 0;
+}
+
+@media (max-width: 1199.98px) {
+    .swiperMovies {
+        padding: 0 15px;
+    }
+    .swiperMovies .swiper-button-prev {
+        margin: -180px 0 0 60px;
+    }
+    .swiperMovies .swiper-button-next {
+        margin: -180px 60px 0 0;
+    }
+}
+
+@media (max-width: 1023.98px) {
+    .swiperMovies .swiper-button-prev,
+    .swiperMovies .swiper-button-next {
+        padding: 46px 28px;
+        margin: -180px 0 0 30px;
+        border-radius: 28px;
+    }
+    .swiperMovies .swiper-button-next {
+        margin: -180px 30px 0 0;
+    }
+}
+@media (max-width: 899.98px) {
+    .swiperMovies .swiper-button-prev,
+    .swiperMovies .swiper-button-next {
+        padding: 40px 24px;
+        margin: -120px 0 0 20px;
+        border-radius: 24px;
+        &:after {
+            font-size: 30px;
+        }
+    }
+    .swiperMovies .swiper-button-next {
+        margin: -120px 20px 0 0;
+    }
+}
+@media (max-width: 599.98px) {
+    .swiperMovies .swiper-button-prev {
+        margin: -100px 0 0 20px;
+    }
+    .swiperMovies .swiper-button-next {
+        margin: -100px 20px 0 0;
+    }
+}
+@media (max-width: 539.98px) {
+    .swiperMovies .swiper-slide {
+        max-width: 200px;
+    }
+}
+@media (max-width: 539.98px) {
+    .swiperMovies .swiper-button-prev,
+    .swiperMovies .swiper-button-next {
+        display: none;
+    }
+}
+@media (max-width: 399.98px) {
+    .swiperMovies .swiper-slide {
+        max-width: 170px;
+    }
+}

@@ -1,0 +1,10 @@
+.pageTemplate__wrapper {
+    max-width: 1200px;
+    padding: 0 30px;
+    margin: 70px auto 0;
+}
+@media (max-width: 399.98px) {
+    .pageTemplate__wrapper {
+        padding: 0 15px;
+    }
+}

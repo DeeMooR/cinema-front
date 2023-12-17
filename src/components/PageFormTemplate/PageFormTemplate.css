@@ -1,0 +1,70 @@
+.pageFormTemplate {
+  width: 100%;
+  height: 100vh;
+  overflow-y: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pageFormTemplate .pageFormTemplate__left {
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  padding: 25px 30px;
+  cursor: pointer;
+}
+.pageFormTemplate .pageFormTemplate__left img {
+  width: 40px;
+  height: 40px;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+}
+.pageFormTemplate .pageFormTemplate__left img:hover {
+  opacity: 1;
+}
+.pageFormTemplate .pageFormTemplate__form {
+  position: relative;
+  z-index: 2;
+  width: 574px;
+  max-width: 574px;
+  margin: 0 30px;
+  padding: 40px;
+  background-color: rgb(39, 39, 42);
+  border-radius: 10px;
+}
+.pageFormTemplate .pageFormTemplate__form .pageFormTemplate__title {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  color: #fff;
+  margin: 0 0 40px 0;
+}
+.pageFormTemplate .pageFormTemplate__form .pageFormTemplate__title.title-small {
+  margin: 0 0 33px 0;
+}
+.pageFormTemplate .pageFormTemplate__license {
+  position: absolute;
+  z-index: 3;
+  inset: auto;
+  bottom: 25px;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 633.98px) {
+  .pageFormTemplate .pageFormTemplate__form {
+    width: calc(100vw - 60px);
+  }
+}
+@media (max-width: 479.98px) {
+  .pageFormTemplate .pageFormTemplate__form {
+    padding: 24px;
+    background-color: rgb(39, 39, 42);
+  }
+  .pageFormTemplate .pageFormTemplate__form .pageFormTemplate__title {
+    font-size: 20px;
+    line-height: 32px;
+    margin: 0 0 32px 0;
+  }
+}

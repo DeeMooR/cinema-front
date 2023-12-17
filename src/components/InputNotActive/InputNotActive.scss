@@ -1,0 +1,27 @@
+.inputNotActive {
+    width: 50%;
+    .inputNotActive__title {
+        font-weight: 500;
+        line-height: 24px;
+        margin: 0 0 8px 0;
+        color: #fff;
+    }
+    .inputNotActive__value {
+        width: 100%;
+        height: 56px;
+        padding: 16px 8px 16px 20px;
+        border-radius: 10px;
+        line-height: 20px;
+        background-color: #323537;
+        color: rgba(255,255,255,0.8);
+        overflow: hidden;
+        white-space: nowrap; 
+        text-overflow: ellipsis;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .inputNotActive {
+        width: 100%;
+    }
+}
