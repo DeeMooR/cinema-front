@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/cinema-front/static/css/main.09c236e8.css",
+    "main.js": "/cinema-front/static/js/main.b116abfb.js",
+    "static/media/afisha_background.svg": "/cinema-front/static/media/afisha_background.1a714434d6e1d9c8a5deb5ca9bfbd6a4.svg",
+    "static/media/logo_big_pink.png": "/cinema-front/static/media/logo_big_pink.8a903a93fab2df926fc1.png",
+    "static/media/logo_big.png": "/cinema-front/static/media/logo_big.1c863457c5914af55dc6.png",
+    "static/media/belcard.svg": "/cinema-front/static/media/belcard.7edf1f6d5d20223264ff54ad20c51eb7.svg",
+    "static/media/logo_small_pink.png": "/cinema-front/static/media/logo_small_pink.c10d986bb01e55032632.png",
+    "static/media/screen.png": "/cinema-front/static/media/screen.a78265389db1ca51bdc1.png",
+    "static/media/logo_small.png": "/cinema-front/static/media/logo_small.d5fd08bdc54c32d80a63.png",
+    "static/media/slide_bar.svg": "/cinema-front/static/media/slide_bar.96094330b82f12bf6196d2c07abbe712.svg",
+    "static/media/assist.svg": "/cinema-front/static/media/assist.8185dd7a00a280378ec0a7b8d5ad2a64.svg",
+    "static/media/unionpay.svg": "/cinema-front/static/media/unionpay.eff58a4431143f682b0c059ed74e4937.svg",
+    "static/media/instagram.svg": "/cinema-front/static/media/instagram.ddbdf45c18c883e194225f72def80ae5.svg",
+    "static/media/instagram-dark.svg": "/cinema-front/static/media/instagram-dark.bf3a3fa05f57773c67e0dd7e05906046.svg",
+    "static/media/mastercard.svg": "/cinema-front/static/media/mastercard.c577c98b9f2940b57fe3040cfd7085c2.svg",
+    "static/media/video.svg": "/cinema-front/static/media/video.4db04e2cb1cad696febca43977901678.svg",
+    "static/media/visa.svg": "/cinema-front/static/media/visa.1e41a5dc9ba5a204436b0b26ab2d744c.svg",
+    "static/media/vk.svg": "/cinema-front/static/media/vk.9b9d7a0ed4e388f87470995ee7060998.svg",
+    "static/media/vk-dark.svg": "/cinema-front/static/media/vk-dark.6cc438d148321540308d38dc4738f635.svg",
+    "static/media/left.svg": "/cinema-front/static/media/left.f53e5c04613391ca814e9f8c40b09ca2.svg",
+    "static/media/facebook.svg": "/cinema-front/static/media/facebook.dda8817bdea940f251a3b2a92e03aa6c.svg",
+    "static/media/facebook-dark.svg": "/cinema-front/static/media/facebook-dark.ec2f7a207ca46cae1ec0f65fce5c2ce9.svg",
+    "static/media/cross.svg": "/cinema-front/static/media/cross.f63b21eda25354a865acfe35e0ec31ca.svg",
+    "index.html": "/cinema-front/index.html",
+    "static/media/check.svg": "/cinema-front/static/media/check.9a34f94b21fd266dfbc51a5fe3472110.svg",
+    "main.09c236e8.css.map": "/cinema-front/static/css/main.09c236e8.css.map",
+    "main.b116abfb.js.map": "/cinema-front/static/js/main.b116abfb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.09c236e8.css",
+    "static/js/main.b116abfb.js"
+  ]
+}
