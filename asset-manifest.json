@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cinema-front/static/css/main.09c236e8.css",
-    "main.js": "/cinema-front/static/js/main.878b38c4.js",
+    "main.js": "/cinema-front/static/js/main.2e2c456f.js",
     "static/media/afisha_background.svg": "/cinema-front/static/media/afisha_background.1a714434d6e1d9c8a5deb5ca9bfbd6a4.svg",
     "static/media/logo_big_pink.png": "/cinema-front/static/media/logo_big_pink.8a903a93fab2df926fc1.png",
     "static/media/logo_big.png": "/cinema-front/static/media/logo_big.1c863457c5914af55dc6.png",
@@ -26,10 +26,10 @@
     "index.html": "/cinema-front/index.html",
     "static/media/check.svg": "/cinema-front/static/media/check.9a34f94b21fd266dfbc51a5fe3472110.svg",
     "main.09c236e8.css.map": "/cinema-front/static/css/main.09c236e8.css.map",
-    "main.878b38c4.js.map": "/cinema-front/static/js/main.878b38c4.js.map"
+    "main.2e2c456f.js.map": "/cinema-front/static/js/main.2e2c456f.js.map"
   },
   "entrypoints": [
     "static/css/main.09c236e8.css",
-    "static/js/main.878b38c4.js"
+    "static/js/main.2e2c456f.js"
   ]
 }
