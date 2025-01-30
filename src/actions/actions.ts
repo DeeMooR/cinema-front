@@ -172,7 +172,7 @@ export const GET_GIFT_CARDS = (setModal: (v: JSX.Element) => void) => {
         
         try {
             let response = await fetch(
-                "https://jsonblob.com/api/jsonBlob/1298633934546788352"     // gift_cards
+                "https://jsonblob.com/api/jsonBlob/1334512820498391040"     // gift_cards
             )
             if (response.ok) {
                 const arrGiftCards = await response.json();
@@ -181,7 +181,7 @@ export const GET_GIFT_CARDS = (setModal: (v: JSX.Element) => void) => {
             else modalShowMessege(setModal, false);
              
             response = await fetch(
-                "https://jsonblob.com/api/jsonBlob/1298636171390083072"     // presentcard_main
+                "https://jsonblob.com/api/jsonBlob/1334513624638742528"     // presentcard_main
             )
             if (response.ok) {
                 const objMainPresentCard = await response.json();
@@ -201,7 +201,7 @@ export const ADD_GIFT_SELECT = (arrWithNewAmount: IDataGiftCard[], objForGiftSel
         try {
             await dispatch({ type: "SET_GIFT_CARDS", payload: arrWithNewAmount });
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298633934546788352',        // gift_cards
+                'https://jsonblob.com/api/jsonBlob/1334512820498391040',        // gift_cards
                 {
                     method: "PUT",
                     body: JSON.stringify(arrWithNewAmount),
@@ -225,7 +225,7 @@ export const SEND_MY_CARDS = (userId: number, addArrMyCards: IDataMyCard[], setM
         let newArrUsers, userIsExist = false;
         try {
             let response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298634673557987328'        // users
+                'https://jsonblob.com/api/jsonBlob/1334512936005328896'        // users
             )
             if (response.ok) {
                 const arrUsers = await response.json();
@@ -244,7 +244,7 @@ export const SEND_MY_CARDS = (userId: number, addArrMyCards: IDataMyCard[], setM
             else modalShowMessege(setModal, false);
 
             response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298634673557987328',        // users
+                'https://jsonblob.com/api/jsonBlob/1334512936005328896',        // users
                 {
                     method: "PUT",
                     body: JSON.stringify(newArrUsers),
@@ -264,7 +264,7 @@ export const GET_MY_CARDS_MOVIES = (userId: number, setModal: (v: JSX.Element) =
 
         try {
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298634673557987328'        // users
+                'https://jsonblob.com/api/jsonBlob/1334512936005328896'        // users
             )
             if (response.ok) {
                 const arrUsers = await response.json();
@@ -284,7 +284,7 @@ export const GET_ENTERTAINMENT_NEWS = (setModal: (v: JSX.Element) => void) => {
     return async (dispatch: ThunkDispatch<any, {}, AnyAction>) => {
         try {
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298635266125062144'        // entertainment_news
+                'https://jsonblob.com/api/jsonBlob/1334513135855525888'        // entertainment_news
             )
             if (response.ok) {
                 const arrEntertainmentNews = await response.json();
@@ -302,7 +302,7 @@ export const GET_NEWSPAGE_NEWS = (setModal: (v: JSX.Element) => void) => {
     return async (dispatch: ThunkDispatch<any, {}, AnyAction>) => {
         try {
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298635455363670016'        // newsPage_news
+                'https://jsonblob.com/api/jsonBlob/1334513311169044480'        // newsPage_news
             )
             if (response.ok) {
                 const arrNewsPageNews = await response.json();
@@ -319,7 +319,7 @@ export const GET_SEAT_TYPES = (setModal: (v: JSX.Element) => void) => {
     return async (dispatch: ThunkDispatch<any, {}, AnyAction>) => {
         try {
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298635011639861248'        // seat_types
+                'https://jsonblob.com/api/jsonBlob/1334512993941250048'        // seat_types
             )
             if (response.ok) {
                 const arrSeatTypes = await response.json();
@@ -336,7 +336,7 @@ export const GET_SLIDER_SWIPER = (setModal: (v: JSX.Element) => void) => {
     return async (dispatch: ThunkDispatch<any, {}, AnyAction>) => {
         try {
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298636536277753856'        // slider_swiper
+                'https://jsonblob.com/api/jsonBlob/1334513695421816832'        // slider_swiper
             )
             if (response.ok) {
                 const arrSliderSwiper = await response.json();
@@ -353,7 +353,7 @@ export const GET_MAIN_NEWS = (setModal: (v: JSX.Element) => void) => {
     return async (dispatch: ThunkDispatch<any, {}, AnyAction>) => {
         try {
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298635643306237952'        // main_news
+                'https://jsonblob.com/api/jsonBlob/1334513384758108160'        // main_news
             )
             if (response.ok) {
                 const arrMainNews = await response.json();
@@ -370,7 +370,7 @@ export const GET_AFISHA_NEWS = (setModal: (v: JSX.Element) => void) => {
     return async (dispatch: ThunkDispatch<any, {}, AnyAction>) => {
         try {
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298635796121509888'        // afisha_news
+                'https://jsonblob.com/api/jsonBlob/1334513472565862400'        // afisha_news
             )
             if (response.ok) {
                 const arrAfishaNews = await response.json();
@@ -387,7 +387,7 @@ export const GET_MAIN_VISA = (setModal: (v: JSX.Element) => void) => {
     return async (dispatch: ThunkDispatch<any, {}, AnyAction>) => {
         try {
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298636003336904704'        // main_visa
+                'https://jsonblob.com/api/jsonBlob/1334513557550850048'        // main_visa
             )
             if (response.ok) {
                 const objMainVisa = await response.json();
@@ -404,7 +404,7 @@ export const GET_ROOMS = (setModal: (v: JSX.Element) => void) => {
     return async (dispatch: ThunkDispatch<any, {}, AnyAction>) => {
         try {
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298636841308512256'        // rooms
+                'https://jsonblob.com/api/jsonBlob/1334513763994492928'        // rooms
             )
             if (response.ok) {
                 const arrRooms = await response.json();
@@ -421,7 +421,7 @@ export const GET_MOVIES = (setModal: (v: JSX.Element) => void) => {
     return async (dispatch: ThunkDispatch<any, {}, AnyAction>) => {
         try {
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298637058510544896'        // movies
+                'https://jsonblob.com/api/jsonBlob/1334513848769765376'        // movies
             )
             if (response.ok) {
                 const arrMovies = await response.json();
@@ -438,7 +438,7 @@ export const GET_SEANCES = (setModal: (v: JSX.Element) => void) => {
     return async (dispatch: ThunkDispatch<any, {}, AnyAction>) => {
         try {
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298637263909806080'        // seances
+                'https://jsonblob.com/api/jsonBlob/1334513913617899520'        // seances
             )
             if (response.ok) {
                 const arrSeances = await response.json();
@@ -457,7 +457,7 @@ export const GET_SEAT_SELECT = (userId: number, setModal: (v: JSX.Element) => vo
 
         try {
             const response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298634673557987328'        // users
+                'https://jsonblob.com/api/jsonBlob/1334512936005328896'        // users
             )
             if (response.ok) {
                 const arrUsers: IUserBuy[] = await response.json();
@@ -479,7 +479,7 @@ export const ADD_SEAT_SELECT = (userId: number, newArrSeances: ISeance[], objSea
         try {
             await dispatch({ type: "SET_SEANCES", payload: newArrSeances });
             let response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298637263909806080',        // seances
+                'https://jsonblob.com/api/jsonBlob/1334513913617899520',        // seances
                 {
                     method: "PUT",
                     body: JSON.stringify(newArrSeances),
@@ -496,7 +496,7 @@ export const ADD_SEAT_SELECT = (userId: number, newArrSeances: ISeance[], objSea
             // Добавление в user
             let newArrUsers, userIsExist = false;
             response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298634673557987328'        // users
+                'https://jsonblob.com/api/jsonBlob/1334512936005328896'        // users
             )
             if (response.ok) {
                 const arrUsers = await response.json();
@@ -515,7 +515,7 @@ export const ADD_SEAT_SELECT = (userId: number, newArrSeances: ISeance[], objSea
             else modalShowMessege(setModal, false);
 
             response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298634673557987328',        // users
+                'https://jsonblob.com/api/jsonBlob/1334512936005328896',        // users
                 {
                     method: "PUT",
                     body: JSON.stringify(newArrUsers),
@@ -538,7 +538,7 @@ export const REMOVE_SEAT_SELECT = (userId: number, newArrSeances: ISeance[], new
         
         try {
             let response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298637263909806080',        // seances
+                'https://jsonblob.com/api/jsonBlob/1334513913617899520',        // seances
                 {
                     method: "PUT",
                     body: JSON.stringify(newArrSeances),
@@ -558,7 +558,7 @@ export const REMOVE_SEAT_SELECT = (userId: number, newArrSeances: ISeance[], new
 
             let newArrUsers;
             response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298634673557987328'        // users
+                'https://jsonblob.com/api/jsonBlob/1334512936005328896'        // users
             )
             if (response.ok) {
                 const arrUsers = await response.json();
@@ -575,7 +575,7 @@ export const REMOVE_SEAT_SELECT = (userId: number, newArrSeances: ISeance[], new
             else modalShowMessege(setModal, false);
 
             response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298634673557987328',        // users
+                'https://jsonblob.com/api/jsonBlob/1334512936005328896',        // users
                 {
                     method: "PUT",
                     body: JSON.stringify(newArrUsers),
@@ -609,7 +609,7 @@ export const SEND_MY_SEATS = (userId: number, arrSeatSelect: IDataSeatSelect[], 
             await dispatch({ type: "SET_SEANCES", payload: arrSeances });
 
             let response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298637263909806080',        // seances
+                'https://jsonblob.com/api/jsonBlob/1334513913617899520',        // seances
                 {
                     method: "PUT",
                     body: JSON.stringify(arrSeances),
@@ -621,7 +621,7 @@ export const SEND_MY_SEATS = (userId: number, arrSeatSelect: IDataSeatSelect[], 
             if (!response.ok) modalShowMessege(setModal, false);
             
             response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298634673557987328'        // users
+                'https://jsonblob.com/api/jsonBlob/1334512936005328896'        // users
             )
             if (response.ok) {
                 const arrUsers = await response.json();
@@ -641,7 +641,7 @@ export const SEND_MY_SEATS = (userId: number, arrSeatSelect: IDataSeatSelect[], 
             else modalShowMessege(setModal, false);
 
             response = await fetch(
-                'https://jsonblob.com/api/jsonBlob/1298634673557987328',        // users
+                'https://jsonblob.com/api/jsonBlob/1334512936005328896',        // users
                 {
                     method: "PUT",
                     body: JSON.stringify(newArrUsers),
